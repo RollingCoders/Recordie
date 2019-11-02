@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="it.jertlok.lightabout">
+    package="it.rolling.lightabout">
 
     <application tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="it.jertlok.lightabout.AboutFragment"
+        <activity android:name="it.rolling.lightabout.AboutFragment"
             android:label="@string/about" />
     </application>
 

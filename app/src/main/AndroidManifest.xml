@@ -18,8 +18,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="it.jertlok.recordie" >
-
+    package="it.rolling.recordieFork" >
     <!-- Permissions -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -29,13 +28,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launchers"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcherc"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.MainActivity">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4975056503352119~7872671261"/>
+        <activity android:name="it.rolling.recordieFork.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
@@ -46,20 +48,20 @@
         </activity>
 
         <!-- SettingsActivity -->
-        <activity android:name=".activities.SettingsActivity"
+        <activity android:name="it.rolling.recordieFork.activities.SettingsActivity"
             android:theme="@style/AppTheme.Settings" />
 
-        <activity android:name="it.jertlok.recordie.activities.AboutActivity" />
+        <activity android:name="it.rolling.recordieFork.activities.AboutActivity" />
 
         <!-- Activity for starting the recording from a QS Tile -->
-        <activity android:name=".activities.RecordingActivity"
+        <activity android:name="it.rolling.recordieFork.activities.RecordingActivity"
             android:theme="@style/InvisibleActivity"
             android:excludeFromRecents="true">
         </activity>
 
         <!-- QS Tile service -->
         <service
-            android:name=".services.RecordQSTileService"
+            android:name="it.rolling.recordieFork.services.RecordQSTileService"
             android:label="@string/qs_record_title"
             android:icon="@drawable/ic_record"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -68,7 +70,7 @@
             </intent-filter>
         </service>
 
-        <service android:name=".services.ScreenRecorderService"/>
+        <service android:name="it.rolling.recordieFork.services.ScreenRecorderService"/>
 
         <!-- File provider -->
         <provider

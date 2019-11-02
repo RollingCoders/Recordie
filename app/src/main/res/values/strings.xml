@@ -17,7 +17,7 @@
 
 <resources>
     <!-- Activity names -->
-    <string name="app_name">Recordie</string>
+    <string name="app_name">Pro Screen Video Recorder HD</string>
     <string name="settings_activity_name">Settings</string>
     <string name="about_activity_name">About</string>
 

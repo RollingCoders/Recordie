@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "it.jertlok.recordie"
+        applicationId "it.rolling.recordieFork"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 5
@@ -61,6 +61,8 @@ dependencies {
     testImplementation 'junit:junit:4.13-beta-3'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1-beta01'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-beta01'
+    implementation 'com.google.android.gms:play-services-ads:18.2.0'
+
     // Material design
     implementation 'com.google.android.material:material:1.1.0-alpha06'
     // Shake detector

@@ -24,8 +24,8 @@
         android:shortcutShortLabel="@string/settings_activity_name" >
         <intent
             android:action="android.intent.action.MAIN"
-            android:targetPackage="it.jertlok.recordie"
-            android:targetClass="it.jertlok.recordie.activities.SettingsActivity" />
+            android:targetPackage="it.rolling.recordieFork"
+            android:targetClass="it.rolling.recordieFork.activities.SettingsActivity" />
 
         <categories android:name="android.shortcut.settings" />
     </shortcut>
@@ -35,9 +35,9 @@
         android:icon="@drawable/shortcut_record"
         android:shortcutShortLabel="@string/qs_record_title" >
         <intent
-            android:action="it.jertlok.activities.RecordingActivity.ACTION_QS_START"
-            android:targetPackage="it.jertlok.recordie"
-            android:targetClass="it.jertlok.recordie.activities.RecordingActivity" />
+            android:action="it.rolling.activities.RecordingActivity.ACTION_QS_START"
+            android:targetPackage="it.rolling.recordieFork"
+            android:targetClass="it.rolling.recordieFork.activities.RecordingActivity" />
 
         <categories android:name="android.shortcut.record" />
     </shortcut>
