@@ -1,6 +1,6 @@
-# Recordie
+# RC version of Recordie
 
-Minimal Android Screen Recorder written in Kotlin just for fun and learning purposes.
+As required by GPL3, here is our modified version of Recordie.
 
 ## Third party libraries
 
